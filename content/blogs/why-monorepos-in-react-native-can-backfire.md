@@ -5,7 +5,7 @@ date: 2025-03-15
 excerpt: >
   Ran into major issues using a monorepo setup with React Native while contributing to RealDevSquad.
   Metro bundler, shared node_modules, and cleanup cycles made dev painful — here’s everything I learned.
-image: https://i.pinimg.com/736x/47/69/31/476931c1333a226c179fd62fac248c31.jpg
+image: https://i.pinimg.com/736x/0d/de/c3/0ddec32e58c846595485db2ba19954fc.jpg
 ---
 
 ## Introduction
@@ -13,6 +13,8 @@ image: https://i.pinimg.com/736x/47/69/31/476931c1333a226c179fd62fac248c31.jpg
 Monorepos have become quite popular in recent years for managing multiple projects under a single repository. While they provide many advantages, such as easier dependency management and code sharing, they can also introduce some significant challenges, especially when working with complex frameworks like React Native.
 
 In this blog post, I'll share my experience using a monorepo setup in a React Native project and discuss why it didn't work well for our team. 
+
+![Monorepo Issues](https://i.pinimg.com/736x/47/69/31/476931c1333a226c179fd62fac248c31.jpg)
 
 ## The Problem
 
@@ -40,5 +42,5 @@ We also started using **Lerna** and **Yarn Workspaces** to help manage shared pa
 Monorepos can offer some great benefits for code sharing and dependency management, but they’re not always the best solution, especially when working with React Native. If you’re considering a monorepo for your next project, be prepared for the challenges that come with it — and know when it might be better to split things up.
 
 Feel free to share your thoughts or ask questions in the comments below!
-
 ---
+
