@@ -3,7 +3,7 @@ title: Overcoming React Native Navigation
 author: Aditi Shinde  
 date: 2025-04-10  
 excerpt: >  
-  Navigating between screens in React Native seems simple—until you start integrating deep links, modals, and authentication flows.  
+  Navigating between screens in React Native seems simple—until you start integrating deep links, modals, and authentication flows.
   Here's how I tackled the chaos and structured a clean navigation system using Expo Router.  
 image: https://i.pinimg.com/736x/51/0f/60/510f607e0c01832816c7480218151cb9.jpg 
 ---
