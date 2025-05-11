@@ -1,7 +1,7 @@
 ---
 title: Why Monorepos in React Native Can Backfire
 author: Aditi Shinde
-date: 2025-03-15
+date: 2025-04-08
 excerpt: >
   Ran into major issues using a monorepo setup with React Native while contributing to RealDevSquad.
   Metro bundler, shared node_modules, and cleanup cycles made dev painful — here’s everything I learned.
