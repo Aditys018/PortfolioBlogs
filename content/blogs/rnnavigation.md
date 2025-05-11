@@ -1,47 +1,46 @@
 ---
-title: Overcoming React Native Navigation 
-author: Aditi Shinde  
-date: 2025-04-10  
-excerpt: >  
-  Navigating between screens in React Native seems simple—until you start integrating deep links, modals, and authentication flows.
-  Here's how I tackled the chaos and structured a clean navigation system using Expo Router.  
-image: https://i.pinimg.com/736x/51/0f/60/510f607e0c01832816c7480218151cb9.jpg 
+title: React Native Navigation 
+author: Aditi Shinde
+date: 2025-03-15
+excerpt: >
+  Ran into major issues using a monorepo setup with React Native while contributing to RealDevSquad.
+  Metro bundler, shared node_modules, and cleanup cycles made dev painful — here’s everything I learned.
+image: https://i.pinimg.com/736x/0d/de/c3/0ddec32e58c846595485db2ba19954fc.jpg
 ---
 
 ## Introduction
 
-Navigation is the backbone of any mobile application, but with React Native, it can quickly become a tangled web—especially when you're using deep linking, authentication, and modals all in one app.
+Monorepos have become quite popular in recent years for managing multiple projects under a single repository. While they provide many advantages, such as easier dependency management and code sharing, they can also introduce some significant challenges, especially when working with complex frameworks like React Native.
 
-In this post, I’ll walk you through the issues I faced while working with complex navigation flows in a React Native project using Expo, and how I ended up simplifying it with Expo Router.
+In this blog post, I'll share my experience using a monorepo setup in a React Native project and discuss why it didn't work well for our team. 
 
-![Navigation Chaos](https://i.pinimg.com/736x/51/0f/60/510f607e0c01832816c7480218151cb9.jpg)
+![Monorepo Issues](https://i.pinimg.com/736x/47/69/31/476931c1333a226c179fd62fac248c31.jpg)
 
 ## The Problem
 
-Initially, I was using `react-navigation` with manual route configurations. But as the app grew, I faced several issues:
+One of the biggest pain points with using a monorepo in a React Native project was the **Metro bundler**. Metro is the bundler used by React Native to package and serve JavaScript bundles during development. Unfortunately, Metro wasn’t designed with monorepos in mind, and we encountered several issues related to caching, performance, and file watching.
 
-- **Deep Linking Breakage**: Links wouldn’t always open the correct screen, especially on Android.
-- **Redundant Route Definitions**: Maintaining separate stacks for auth, modals, and main screens led to a lot of duplication.
-- **No Clear Structure**: It was hard to track which component was navigating where—everything was scattered.
+Here’s a list of the most significant problems we faced:
+
+- **Metro Bundler Issues**: 
+  Metro bundler’s caching mechanism didn't play well with the shared `node_modules` folder. It caused unpredictable build failures and long startup times.
+  
+- **Shared Node Modules**:
+  Having multiple React Native apps and packages sharing the same `node_modules` directory meant that incompatible versions of dependencies could easily break the build.
+
+- **Development Cycle Slowness**:
+  The complexity of handling multiple apps, dependencies, and node modules within the same repo led to slower development cycles. We constantly found ourselves fighting with build issues and dependency version mismatches.
 
 ## Solution
 
-After exploring a few options, I switched to **Expo Router**. It felt like how routing should work in a mobile app—file-based, scalable, and declarative.
+After experimenting with a monorepo setup for a few months, we decided to break our project into separate repositories for each application. This allowed us to resolve dependency versioning issues and significantly improve the speed of our development cycles.
 
-Here’s what improved:
-
-- **Directory-Based Routing**: The folder structure defined the routes, making it much easier to manage and visualize the navigation tree.
-- **Shared Layouts**: I could define layout components at the folder level—perfect for shared headers, tabs, or bottom navigation.
-- **Better Deep Link Support**: Expo Router handled deep linking out-of-the-box with minimal setup.
-
-## Key Takeaways
-
-- Use `app/_layout.js` or `app/_layout.tsx` wisely for wrapping screens in tabs or stack layouts.
-- Organize modals inside `app/modal/` and nest dynamic routes like `[id].js` for clean detail views.
-- Keep navigation logic declarative—don’t push and pop manually unless you really need to.
+We also started using **Lerna** and **Yarn Workspaces** to help manage shared packages, which made it easier to handle common dependencies across projects.
 
 ## Conclusion
 
-If you're building a React Native app and struggling with navigation, I strongly recommend trying Expo Router. It simplifies routing, improves maintainability, and just makes the developer experience more pleasant.
+Monorepos can offer some great benefits for code sharing and dependency management, but they’re not always the best solution, especially when working with React Native. If you’re considering a monorepo for your next project, be prepared for the challenges that come with it — and know when it might be better to split things up.
 
-Let me know your experience with navigation in React Native—or if you have any questions about setting up Expo Router!
+Feel free to share your thoughts or ask questions in the comments below!
+---
+
