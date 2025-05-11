@@ -5,7 +5,7 @@ date: 2025-03-15
 excerpt: >
   Ran into major issues using a monorepo setup with React Native while contributing to RealDevSquad.
   Metro bundler, shared node_modules, and cleanup cycles made dev painful — here’s everything I learned.
-image: https://i.pinimg.com/736x/0d/de/c3/0ddec32e58c846595485db2ba19954fc.jpg
+image: https://i.pinimg.com/736x/30/70/b8/3070b8406ab06d001445f0ac62b30c9e.jpg
 ---
 
 ## Introduction
