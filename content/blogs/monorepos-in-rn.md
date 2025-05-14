@@ -1,7 +1,7 @@
 ---
-title: Building React Native Apps
+title: Jetpack compose & MobileDev
 author: Aditi Shinde
-date: 2025-03-15
+date: 2025-05-14
 excerpt: >
   Ran into major issues using a monorepo setup with React Native while contributing to RealDevSquad.
   Metro bundler, shared node_modules, and cleanup cycles made dev painful — here’s everything I learned.
