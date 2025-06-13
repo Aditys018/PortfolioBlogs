@@ -7,11 +7,20 @@ excerpt: >
 image: https://i.pinimg.com/736x/30/70/b8/3070b8406ab06d001445f0ac62b30c9e.jpg
 ---
 
-## Introduction
+## Preface
 
-Monorepos have become quite popular in recent years for managing multiple projects under a single repository. While they provide many advantages, such as easier dependency management and code sharing, they can also introduce some significant challenges, especially when working with complex frameworks like React Native.
+Every computer contains muktiple components in it which are responcible to perform specific tasks.
+There are 7 main components of computer:
+            1. Microprocessor
+            2. Math co-processor
+            3. Storage devices
+            4. input devices.
+            5. Output devices.
+            6. Motherboard
+            7. Bus
+Keyboard, mouse comes under the input devices in which keyboard is considered as a standard input device, whereas console, printer are considered as output devices in which console is a standard output device.
 
-In this blog post, I'll share my experience using a monorepo setup in a React Native project and discuss why it didn't work well for our team. 
+
 
 ![Monorepo Issues](https://i.pinimg.com/736x/47/69/31/476931c1333a226c179fd62fac248c31.jpg)
 
