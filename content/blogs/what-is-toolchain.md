@@ -12,13 +12,8 @@ image: https://i.pinimg.com/736x/17/68/1b/17681bb89e2e52ccec8b3b2541356b78.jpg
 Every computer contain multiple components in it which are responsible to perform specific tasks.  
 There are 7 main components of a computer:
 
-1. Input devices  
-2. Output devices  
-3. Storage devices  
-4. Motherboard  
-5. Bus  
-6. Microprocessor  
-7. Math co-processor
+    1. Input devices  | 2. Output devices  |  3. Storage devices  | 4. Motherboard  | 
+    5. Bus  | 6. Microprocessor  |  7. Math co-processor
 
 ## 1. Input Devices
 
