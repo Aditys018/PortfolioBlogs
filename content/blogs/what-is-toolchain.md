@@ -4,7 +4,7 @@ author: Aditi Shinde
 date: 2025-05-14
 excerpt: >
   Toolchains are a significant part of a software development process, the toolchain is a chain which binds hardware to the software with the help of a set of tools present in it, in this blog we will discuss about how the toolchains play an important role in the software development part.
-image: https://i.pinimg.com/736x/30/70/b8/3070b8406ab06d001445f0ac62b30c9e.jpg
+image: https://i.pinimg.com/736x/17/68/1b/17681bb89e2e52ccec8b3b2541356b78.jpg
 ---
 
 ## Preface
