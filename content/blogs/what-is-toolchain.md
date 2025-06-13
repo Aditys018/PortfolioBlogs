@@ -9,7 +9,7 @@ image: https://i.pinimg.com/736x/17/68/1b/17681bb89e2e52ccec8b3b2541356b78.jpg
 
 ## Preface
 
-Every computer contains multiple components in it which are responsible to perform specific tasks.  
+Every computer contain multiple components in it which are responsible to perform specific tasks.  
 There are 7 main components of a computer:
 
 1. Input devices  
