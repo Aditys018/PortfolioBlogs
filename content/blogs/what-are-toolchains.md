@@ -1,10 +1,9 @@
 ---
-title: Jetpack compose & MobileDev
+title: What are toolchains and what is their significance?
 author: Aditi Shinde
 date: 2025-05-14
 excerpt: >
-  Ran into major issues using a monorepo setup with React Native while contributing to RealDevSquad.
-  Metro bundler, shared node_modules, and cleanup cycles made dev painful — here’s everything I learned.
+  Toolchains are s significant part of a software development process, the toolchain is a chain which binds hardware to the software with the help of a set of tools present in it, in this blog we will discuss about how the toolchains play an important role in the software development part.
 image: https://i.pinimg.com/736x/30/70/b8/3070b8406ab06d001445f0ac62b30c9e.jpg
 ---
 
