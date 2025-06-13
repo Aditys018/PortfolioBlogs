@@ -1,5 +1,5 @@
 ---
-title: setting up the test env. and writing test cases in RN
+title: setting up the environment in RN
 author: Aditi Shinde
 date: 2025-05-31
 excerpt: >
