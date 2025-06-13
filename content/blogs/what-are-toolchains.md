@@ -3,7 +3,7 @@ title: What are toolchains and what is their significance?
 author: Aditi Shinde
 date: 2025-05-14
 excerpt: >
-  Toolchains are s significant part of a software development process, the toolchain is a chain which binds hardware to the software with the help of a set of tools present in it, in this blog we will discuss about how the toolchains play an important role in the software development part.
+  Toolchains are a significant part of a software development process, the toolchain is a chain which binds hardware to the software with the help of a set of tools present in it, in this blog we will discuss about how the toolchains play an important role in the software development part.
 image: https://i.pinimg.com/736x/30/70/b8/3070b8406ab06d001445f0ac62b30c9e.jpg
 ---
 
@@ -12,13 +12,18 @@ image: https://i.pinimg.com/736x/30/70/b8/3070b8406ab06d001445f0ac62b30c9e.jpg
 Every computer contains multiple components in it which are responsible to perform specific tasks.  
 There are 7 main components of a computer:
 
-1. Microprocessor
-2. Math co-processor
-3. Storage devices
-4. Input devices
-5. Output devices
-6. Motherboard
-7. Bus
+
+<div align="center">
+
+  1. Input devices
+  2. Output devices
+  3. Storage devices
+  4. Motherboard
+  5. Bus
+  6. Microprocessor
+  7. Math co-processor
+
+</div>
 
 Keyboard and mouse come under the input devices, in which the keyboard is considered a standard input device.  
 Whereas console and printer are considered output devices, in which the console is a standard output device.
