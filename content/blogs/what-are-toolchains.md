@@ -13,7 +13,7 @@ Every computer contains multiple components in it which are responsible to perfo
 There are 7 main components of a computer:
 
 
-<div align="center">
+
 
   1. Input devices
   2. Output devices
@@ -23,7 +23,9 @@ There are 7 main components of a computer:
   6. Microprocessor
   7. Math co-processor
 
-</div>
+
+
+## 1. Input Devices
 
 Keyboard and mouse come under the input devices, in which the keyboard is considered a standard input device.  
 Whereas console and printer are considered output devices, in which the console is a standard output device.
