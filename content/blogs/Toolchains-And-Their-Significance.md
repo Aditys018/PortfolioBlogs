@@ -1,7 +1,7 @@
 ---
-title: What are toolchains and what is their significance?
+title:  Toolchains And Their Significance
 author: Aditi Shinde
-date: 2025-05-14
+date: 2025-06-13
 excerpt: >
   Toolchains are a significant part of a software development process. A toolchain acts as the bridge between software and hardware, enabling developers to build, compile, and test applications seamlessly. In this blog, we dive deep into what toolchains are and explore how they power the development workflow from behind the scenes.
 image: https://i.pinimg.com/736x/17/68/1b/17681bb89e2e52ccec8b3b2541356b78.jpg
