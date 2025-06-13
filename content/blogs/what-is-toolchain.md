@@ -1,57 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Toolchains and Their Significance</title>
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
-      padding: 2rem;
-      line-height: 1.6;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: auto;
-      background: white;
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-
-    img.cover {
-      width: 100%;
-      max-height: 400px;
-      object-fit: cover;
-      border-radius: 6px;
-      margin-bottom: 2rem;
-    }
-
-    h1, h2 {
-      color: #1a1a1a;
-    }
-
-    ul {
-      margin-left: 1.5rem;
-    }
-
-    .meta {
-      color: #777;
-      font-size: 0.9rem;
-      margin-bottom: 1rem;
-    }
-  </style>
-</head>
-<body>
-
-  <div class="container" id="blog-root"></div>
-
-  <script>
-    const markdownContent = `---
+---
 title: What are toolchains and what is their significance?
 author: Aditi Shinde
 date: 2025-05-14
@@ -80,15 +27,15 @@ Whereas console and printer are considered output devices, in which the console 
 
 ## The Problem
 
-One of the biggest pain points with using a monorepo in a React Native project was the **Metro bundler**. Metro is the bundler used by React Native to package and serve JavaScript bundles during development. Unfortunately, Metro wasn’t designed with monorepos in mind, and we encountered several issues related to caching, performance, and file watching.
+One of the biggest pain points with using a monorepo in a React Native project was the **Metro bundler**. Metro is the bundler used by React Native to package and serve JavaScript bundles during development. Unfortunately, Metro wasn't designed with monorepos in mind, and we encountered several issues related to caching, performance, and file watching.
 
-Here’s a list of the most significant problems we faced:
+Here's a list of the most significant problems we faced:
 
 - **Metro Bundler Issues**: 
-  Metro bundler’s caching mechanism didn't play well with the shared \`node_modules\` folder. It caused unpredictable build failures and long startup times.
+  Metro bundler's caching mechanism didn't play well with the shared `node_modules` folder. It caused unpredictable build failures and long startup times.
   
 - **Shared Node Modules**:
-  Having multiple React Native apps and packages sharing the same \`node_modules\` directory meant that incompatible versions of dependencies could easily break the build.
+  Having multiple React Native apps and packages sharing the same `node_modules` directory meant that incompatible versions of dependencies could easily break the build.
 
 - **Development Cycle Slowness**:
   The complexity of handling multiple apps, dependencies, and node modules within the same repo led to slower development cycles. We constantly found ourselves fighting with build issues and dependency version mismatches.
@@ -101,36 +48,6 @@ We also started using **Lerna** and **Yarn Workspaces** to help manage shared pa
 
 ## Conclusion
 
-Monorepos can offer some great benefits for code sharing and dependency management, but they’re not always the best solution, especially when working with React Native. If you’re considering a monorepo for your next project, be prepared for the challenges that come with it — and know when it might be better to split things up.
+Monorepos can offer some great benefits for code sharing and dependency management, but they're not always the best solution, especially when working with React Native. If you're considering a monorepo for your next project, be prepared for the challenges that come with it — and know when it might be better to split things up.
 
 Feel free to share your thoughts or ask questions in the comments below!
-`;
-
-    // extract YAML frontmatter
-    const extractMetadata = (content) => {
-      const match = content.match(/^---\n([\s\S]+?)\n---/);
-      if (!match) return {};
-      const metadata = {};
-      match[1].split('\n').forEach(line => {
-        const [key, ...rest] = line.split(':');
-        metadata[key.trim()] = rest.join(':').trim();
-      });
-      return { metadata, stripped: content.replace(match[0], '').trim() };
-    };
-
-    const { metadata, stripped } = extractMetadata(markdownContent);
-
-    const container = document.getElementById('blog-root');
-
-    container.innerHTML = `
-      <img src="${metadata.image}" alt="cover image" class="cover" />
-      <h1>${metadata.title}</h1>
-      <div class="meta">By ${metadata.author} • ${metadata.date}</div>
-      <p><em>${metadata.excerpt}</em></p>
-      <hr/>
-      ${marked.parse(stripped)}
-    `;
-  </script>
-
-</body>
-</html>
