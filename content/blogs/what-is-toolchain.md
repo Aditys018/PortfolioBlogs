@@ -88,4 +88,4 @@ They’re the behind-the-scenes enablers of modern software — quietly ensuring
 
 Toolchains are the unsung heroes of the development process. Understanding their significance not only gives you insight into how software is born but also empowers you to better appreciate and debug your own code.
 
-The next time your code compiles successfully — thank the toolchain quietly. It just did a symphony behind the scenes. 🎼
+The next time your code compiles successfully — thank the toolchain quietly. It just did a symphony behind the scenes. 
