@@ -9,20 +9,21 @@ image: https://i.pinimg.com/736x/30/70/b8/3070b8406ab06d001445f0ac62b30c9e.jpg
 
 ## Preface
 
-Every computer contains muktiple components in it which are responcible to perform specific tasks.
-There are 7 main components of computer:
-            1. Microprocessor
-            2. Math co-processor
-            3. Storage devices
-            4. input devices.
-            5. Output devices.
-            6. Motherboard
-            7. Bus
-Keyboard, mouse comes under the input devices in which keyboard is considered as a standard input device, whereas console, printer are considered as output devices in which console is a standard output device.
+Every computer contains multiple components in it which are responsible to perform specific tasks.  
+There are 7 main components of a computer:
+
+1. Microprocessor
+2. Math co-processor
+3. Storage devices
+4. Input devices
+5. Output devices
+6. Motherboard
+7. Bus
+
+Keyboard and mouse come under the input devices, in which the keyboard is considered a standard input device.  
+Whereas console and printer are considered output devices, in which the console is a standard output device.
 
 
-
-![Monorepo Issues](https://i.pinimg.com/736x/47/69/31/476931c1333a226c179fd62fac248c31.jpg)
 
 ## The Problem
 
